@@ -4,6 +4,10 @@ int main(){
     int num;
     cout<<"enter the amount in figures (-999999 to 999999) : ";
     cin>>num;
+ if(num<-999999 || num>999999){
+  cout<<"Invalid Input";
+  return 1;
+ }
     string ones[]={"", "one " , "two" , "three" , "four" , "five" , "six" , "seven" , "eight" , "nine" , "ten" ,
          "eleven" , "twelve" , "thirteen" , "fourteen" , "fifteen" , "sixteen" , "seventeen" , "eighteen" , "nineteen"};
     string tens[]={"" , "" , "twenty" , "thirty" , "forty" , "fifty" , "sixty" , "seventy" , "eighty" , "ninety"};
@@ -41,6 +45,7 @@ int main(){
             }
 
                 cout<<"\nresult is : " <<result;
+
 
 
         } 
